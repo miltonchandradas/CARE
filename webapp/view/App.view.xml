@@ -1,0 +1,262 @@
+<!--<mvc:View controllerName="com.sap.CARE.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:m="sap.m"
+	xmlns:semantic="sap.m.semantic" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<semantic:DetailPage id="page" title="CARE / LIRA Enrollment">
+					<semantic:content>
+						<f:SimpleForm class="sapUiTinyMargin" id="form1" columnsL="2" columnsM="2" layout="ResponsiveGridLayout">
+							<f:content>
+								<core:Title text="Customer Information"/>
+								<Label text="Name"/>
+								<Text text="Lindsay S. Barlow"/>
+								<Label text="Business Partner"/>
+								<Text text="98765432"/>
+								<core:Title text="Discount Status"/>
+								<Label text="Status"/>
+								<Text text="Active"/>
+								<Label text="Removal Reason"/>
+								<Text text="xyz"/>
+								<Label text="Discount Type"/>
+								<Text text="CM4 - LIRA Master Meter"/>
+								<Label text="Service Address"/>
+								<Text text="5000 East Grant Rd Lot 151, Tucson AZ 85710"/>
+								<Label text="Qualify Date"/>
+								<Text text=""/>
+								<Label text="Source of Enrollment"/>
+								<Text text=""/>
+							</f:content>
+						</f:SimpleForm>
+						<IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding">
+							<items>
+								<IconTabFilter id="iconTabBarFilter1" icon="sap-icon://account" text="Enrollment">
+									<MessageStrip text="Note: Customer is already enrolled..." showIcon="true"/>
+									
+										<f:SimpleForm class="sapUiTinyMargin" id="form2" columnsL="2" columnsM="2" editable="true" layout="ResponsiveGridLayout">
+											<f:content>
+												<core:Title/>
+												<Label text="Service Address"/>
+												<ComboBox selectedItem="item0">
+													<items>
+														<core:Item key="item0" text="5000 East Grant Rd Lot 151..." id="item0"/>
+														<core:Item key="item1" text="No" id="item1"/>
+													</items>
+												</ComboBox>
+												<Label text="Income verification"/>
+												<Text text=""/>
+												<Label text="Number of persons in household"/>
+												<Text text="3"/>
+												<Label text="Gross Income (USD)"/>
+												<Text text="9000"/>
+												<Label text="Source of income (1)"/>
+												<Text text="xyz"/>
+												<Label text="Source of income (2)"/>
+												<Text text="xyz"/>
+												<Label text="Source of enrollment"/>
+												<Text text="xyz"/>
+												<Label text="Discount type"/>
+												<Text text="xyz"/>
+												<core:Title/>
+												<Label text="Documentation"/>
+												<CheckBox></CheckBox>
+												<Label text="Pool Documentation"/>
+												<CheckBox></CheckBox>
+												<Label text="Approve Enrollment"/>
+												<CheckBox></CheckBox>
+											</f:content>
+										</f:SimpleForm>
+									
+								</IconTabFilter>
+								<IconTabFilter id="iconTabBarFilter2" icon="sap-icon://validate" text="Recertification">
+									<VBox class="sapUiTinyMargin">
+										<f:SimpleForm id="form3" columnsL="2" columnsM="2" editable="true" layout="ResponsiveGridLayout">
+											<f:content>
+			
+												<Label text="Expiration Date"/>
+												<DatePicker value="2020-02-05" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange" class="sapUiSmallMarginBottom"/>
+												
+												
+										
+												<Label text="Recertification Type"/>
+												<Text text="xyz"/>
+												<Label text="Approve Recertification"/>
+												<CheckBox></CheckBox>
+												
+											</f:content>
+										</f:SimpleForm>
+									</VBox>
+									
+									
+								</IconTabFilter>
+								<IconTabFilter id="iconTabBarFilter3" icon="sap-icon://approvals" text="Audit">
+									<VBox class="sapUiTinyMargin">
+										<f:SimpleForm id="form4" columnsL="2" columnsM="2" editable="true" layout="ResponsiveGridLayout">
+											<f:content>
+											
+												<Label text="Expiration Date"/>
+												<DatePicker value="2020-02-05" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange" class="sapUiSmallMarginBottom"/>
+												
+												<Label text="Premise Weatherized"/>
+												<Text text=""/>
+												<Label text="Weatherized Date"/>
+												<DatePicker value="2020-02-05" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange" class="sapUiSmallMarginBottom"/>
+												
+											
+										
+												<Label text="Approve Audit"/>
+												<CheckBox></CheckBox>
+												
+											</f:content>
+										</f:SimpleForm>
+									</VBox>
+									
+								</IconTabFilter>
+								<IconTabFilter id="iconTabBarFilter4" icon="sap-icon://decline" text="Removal">
+									<VBox class="sapUiSmallMargin">
+										<MessageStrip text="Note: Customer is already enrolled..." showIcon="true"/>
+									
+										<f:SimpleForm id="form5" columnsL="2" columnsM="2" editable="true" layout="ResponsiveGridLayout">
+											<f:content>
+												
+												
+												<Label text="Removal Reason"/>
+												<Text text="xyz"/>
+												
+							
+										
+												<Label text="Approve Removal"/>
+												<CheckBox></CheckBox>
+												
+											</f:content>
+										</f:SimpleForm>
+									</VBox>
+									
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
+					</semantic:content>
+					<semantic:cancelAction>
+						<semantic:CancelAction id="cancel" press="onCancel"/>
+					</semantic:cancelAction>
+					<semantic:saveAction>
+						<semantic:SaveAction id="save" press="onSave"/>
+					</semantic:saveAction>
+				</semantic:DetailPage>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>-->
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.uxap" xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:forms="sap.ui.layout.form"
+	controllerName="com.sap.CARE.controller.App" height="100%" xmlns:core="sap.ui.core">
+	<ObjectPageLayout id="ObjectPageLayout" alwaysShowContentHeader="true">
+		<headerTitle>
+			<ObjectPageHeader id="headerForTest" objectTitle="Lindsay S. Barlow">
+				<navigationBar>
+					<m:Bar>
+						<m:contentMiddle>
+							<m:Text text="CARE / LIRA Enrollment"/>
+						</m:contentMiddle>
+					</m:Bar>
+				</navigationBar>
+				<actions>
+					<ObjectPageHeaderActionButton hideText="false" type="Emphasized" icon="sap-icon://save" text="Save" tooltip="save"/>
+					<ObjectPageHeaderActionButton hideText="false" icon="sap-icon://cancel" text="Cancel" tooltip="cancel"/>
+				</actions>
+			</ObjectPageHeader>
+		</headerTitle>
+		<headerContent>
+			<layout:VerticalLayout>
+				<m:ObjectStatus title="Business Partner" text="9876543"/>
+				<m:ObjectStatus icon="sap-icon://status-positive" state="Success" title="Address" text="5000 East Grant Rd Lot 151, Tucson AZ 85710"/>
+				<m:ObjectStatus state="Warning" title="Discount Type" text="CM4 - LIRA Master Meter"/>
+			</layout:VerticalLayout>
+			<layout:HorizontalLayout></layout:HorizontalLayout>
+			<m:ObjectStatus state="Success" icon="sap-icon://employee-approvals" text="Status"/>
+			<layout:VerticalLayout>
+				<m:ObjectStatus state="Error" icon="sap-icon://alert" title="Removal Reason" text="Unpaid bills for past 6 months"/>
+				<m:ObjectStatus title="Qualify Date" text=""/>
+				<m:ObjectStatus title="Source of Enrollment" text=""/>
+			</layout:VerticalLayout>
+		</headerContent>
+		<sections>
+			<ObjectPageSection title="Enrollment Criteria">
+				<subSections>
+					<ObjectPageSubSection>
+						<m:VBox>
+							<m:MessageStrip text="Note: Customer is already enrolled..." showIcon="true"/>
+							<forms:SimpleForm class="sapUiTinyMargin" editable="true" layout="ColumnLayout" columnsL="3" labelSpanXL="4" labelSpanL="4" labelSpanM="12"
+								labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" singleContainerFullSize="false">
+								<m:Label text="Service Address" design="Bold"/>
+								<m:ComboBox selectedItem="item0">
+									<m:items>
+										<core:Item key="item0" text="5000 East Grant Rd Lot 151, Tucson AZ 85710" id="item0"/>
+										<core:Item key="item1" text="No" id="item1"/>
+									</m:items>
+								</m:ComboBox>
+								<m:Label text="Income verification" labelFor="id1" design="Bold"/>
+								<m:Text id="id1" text="W2 form"/>
+								<m:Label text="Number of persons in household" design="Bold"/>
+								<m:Text text="3"/>
+								<m:Label text="Gross Income (USD)" design="Bold"/>
+								<m:Text text="9000"/>
+								<m:Label text="Source of income (1)" design="Bold"/>
+								<m:Text text="xyz"/>
+								<m:Label text="Source of income (2)" design="Bold"/>
+								<m:Text text="xyz"/>
+								<m:Label text="Source of enrollment" design="Bold"/>
+								<m:Text text="xyz"/>
+								<m:Label text="Discount type" design="Bold"/>
+								<m:Text text="xyz"/>
+								<m:Label text="Documentation" design="Bold"/>
+								<m:CheckBox></m:CheckBox>
+								<m:Label text="Pool Documentation" design="Bold"/>
+								<m:CheckBox></m:CheckBox>
+								<m:Label text="Approve Enrollment" design="Bold"/>
+								<m:CheckBox></m:CheckBox>
+							</forms:SimpleForm>
+						</m:VBox>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection title="Actions">
+				<subSections>
+					<ObjectPageSubSection title="Recertification">
+						<forms:SimpleForm editable="true" layout="ColumnLayout">
+							<m:Label text="Expiration Date" labelFor="id2" design="Bold"/>
+							<m:DatePicker id="id2" value="2020-02-05" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange" class="sapUiSmallMarginBottom"/>
+							<m:Label text="Recertification Type" labelFor="id3" design="Bold"/>
+							<m:Text id="id3" text="xyz"/>
+							<m:Label text="Approve Recertification" labelFor="id4"  design="Bold"/>
+							<m:CheckBox id="id4"></m:CheckBox>
+						</forms:SimpleForm>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection title="Audit">
+						<forms:SimpleForm editable="true" layout="ColumnLayout">
+							<m:Label text="Expiration Date" design="Bold"/>
+							<m:DatePicker value="2020-02-05" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange" class="sapUiSmallMarginBottom"/>
+							<m:Label text="Premise Weatherized" design="Bold"/>
+							<m:Text text=""/>
+							<m:Label text="Weatherized Date" design="Bold"/>
+							<m:DatePicker value="2020-02-05" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange" class="sapUiSmallMarginBottom"/>
+							<m:Label text="Approve Audit" design="Bold"/>
+							<m:CheckBox></m:CheckBox>
+						</forms:SimpleForm>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection title="Removal">
+						<!--<personal:PersonalBlockPart1 id="part1" columnLayout="1"/>-->
+						<forms:SimpleForm editable="true" layout="ColumnLayout">
+							<m:Label text="Expiration Date" design="Bold"/>
+							<m:DatePicker value="2020-02-05" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange" class="sapUiSmallMarginBottom"/>
+							<m:Label text="Premise Weatherized" design="Bold"/>
+							<m:Text text=""/>
+							<m:Label text="Weatherized Date" design="Bold"/>
+							<m:DatePicker value="2020-02-05" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange" class="sapUiSmallMarginBottom"/>
+							<m:Label text="Approve Audit" design="Bold"/>
+							<m:CheckBox></m:CheckBox>
+						</forms:SimpleForm>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
+</mvc:View>
